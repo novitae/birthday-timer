@@ -11,41 +11,61 @@
     gtag('config', 'UA-123605982-1');
     </script>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Age Timer</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  <script src="app.js"></script>  
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Age Timer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<form id="choose" style="display: none;">
-    <h1 id="dob" class="age-label">When were you born?</h1>
-
-    <footer>
-    <input type="date" name="dob" id="dob-input">
-    <button type="submit" id="submit">Motivate</button>
-    </footer>
-</form>
-
-<div id="timer" style="display: none;">
-    <h1 class="age-label">AGE</h1>
-    <h2 class="count" id="age"></h2>
-</div>
-
-<div id="cite">
-    <h6>Adapted from
-        <a href="https://chrome.google.com/webstore/detail/motivation/ofdgfpchbidcgncgfpdlpclnpaemakoj?hl=en">
-            "Motivation" by maccman.
-        </a>
-    </h6>
-</div>
-
+    <form id="choose" style="display: none;">
+        <h1 id="dob" class="age-label">When were you born?</h1>
+        <footer>
+            <input type="date" name="dob" id="dob-input">
+            <button type="submit" id="submit">Motivate</button>
+        </footer>
+    </form>
+    <div id="countdown-container" style="display: none;">
+        <div id="countdown">
+            <div id="months-countdown">
+                <h2 class="count" id="months"></h2>
+                <h1 class="age-label">Months</h1>
+            </div>
+            <div id="days-countdown">
+                <h2 class="count" id="days"></h2>
+                <h1 class="age-label">Days</h1>
+            </div>
+            <div id="hours-countdown">
+                <h2 class="count" id="hours"></h2>
+                <h1 class="age-label">Hours</h1>
+            </div>
+            <div id="minutes-countdown">
+                <h2 class="count" id="minutes"></h2>
+                <h1 class="age-label">Minutes</h1>
+            </div>
+            <div id="seconds-countdown">
+                <h2 class="count" id="seconds"></h2>
+                <h1 class="age-label">Seconds</h1>
+            </div>
+            <div id="milliseconds-countdown">
+                <h2 class="count" id="milliseconds"></h2>
+                <h1 class="age-label">Ms</h1>
+            </div>
+        </div>
+        <h1 class="age-label" id="birthday-text">Until your <span id="birthday-number"></span><span id="date-suffix"></span> birthday.</h1>
+    </div>
+    <div id="cite">
+        <h6>Adapted from
+            <a href="https://chrome.google.com/webstore/detail/motivation/ofdgfpchbidcgncgfpdlpclnpaemakoj?hl=en">
+                "Motivation" by maccman.
+            </a>
+        </h6>
+    </div>
 </body>
 </html>

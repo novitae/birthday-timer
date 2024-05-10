@@ -108,3 +108,41 @@ footer {
   -webkit-flex-direction: row;
   -webkit-justify-content: center;
 }
+
+#countdown-container {
+  top: 90%;
+  transform: scale(1.2); /* Ajustez cette valeur pour agrandir ou réduire */
+  margin-top: -10%; /* Optionnel : pour centrer le point de transformation */
+}
+
+#countdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#countdown > div {
+  margin: 0 10px;
+}
+
+.count {
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+.age-label {
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+#birthday-text {
+  font-size: 2em; /* Ajustez la taille selon vos besoins */
+  text-align: center;
+  margin-top: 20px;
+}
+
+#birthday-number {
+  color: #4a4a4a; /* Assurez-vous que cette couleur correspond à celle des chiffres du compte à rebours */
+}
